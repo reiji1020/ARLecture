@@ -1,42 +1,26 @@
 CACHE MANIFEST
-# Revision 1409709280281
+# Revision 1409821957229
 
 CACHE:
-conclusions.html
-index.html
 ar/README.html
 arcontents.html
 armarker.html
-image.html
+index.html
+conclusions.html
 file.html
+image.html
 last.html
 special_thanks/README.html
 unity/README.html
 unity/unity.html
 unity_screen.html
-gitbook/._app.js
-gitbook/._print.css
-gitbook/._style.css
 gitbook/app.js
-gitbook/fonts/fontawesome/._FontAwesome.otf
-gitbook/fonts/fontawesome/._fontawesome-webfont.eot
-gitbook/fonts/fontawesome/._fontawesome-webfont.svg
-gitbook/fonts/fontawesome/._fontawesome-webfont.ttf
-gitbook/fonts/fontawesome/._fontawesome-webfont.woff
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
 gitbook/fonts/fontawesome/fontawesome-webfont.svg
 gitbook/fonts/fontawesome/fontawesome-webfont.ttf
 gitbook/fonts/fontawesome/fontawesome-webfont.woff
 gitbook/fonts/merriweather/250.woff
-gitbook/fonts/merriweather/._250.woff
-gitbook/fonts/merriweather/._400.woff
-gitbook/fonts/merriweather/._400i.woff
-gitbook/fonts/merriweather/._700.woff
-gitbook/fonts/merriweather/._700i.woff
-gitbook/fonts/merriweather/._900.woff
-gitbook/fonts/merriweather/._900i.woff
-gitbook/fonts/merriweather/._250i.woff
 gitbook/fonts/merriweather/250i.woff
 gitbook/fonts/merriweather/400.woff
 gitbook/fonts/merriweather/400i.woff
@@ -45,14 +29,6 @@ gitbook/fonts/merriweather/700i.woff
 gitbook/fonts/merriweather/900.woff
 gitbook/fonts/merriweather/900i.woff
 gitbook/fonts/opensans/300.woff
-gitbook/fonts/opensans/._300.woff
-gitbook/fonts/opensans/._400.woff
-gitbook/fonts/opensans/._400i.woff
-gitbook/fonts/opensans/._600.woff
-gitbook/fonts/opensans/._600i.woff
-gitbook/fonts/opensans/._700.woff
-gitbook/fonts/opensans/._700i.woff
-gitbook/fonts/opensans/._300i.woff
 gitbook/fonts/opensans/300i.woff
 gitbook/fonts/opensans/400.woff
 gitbook/fonts/opensans/400i.woff
@@ -60,21 +36,14 @@ gitbook/fonts/opensans/600.woff
 gitbook/fonts/opensans/600i.woff
 gitbook/fonts/opensans/700.woff
 gitbook/fonts/opensans/700i.woff
-gitbook/images/._favicon.ico
 gitbook/images/favicon.ico
-gitbook/jsrepl/._jsrepl.js
-gitbook/jsrepl/._sandbox.html
-gitbook/jsrepl/._sandbox.js
-gitbook/jsrepl/engines/._javascript-default.js
 gitbook/jsrepl/engines/javascript-default.js
 gitbook/jsrepl/jsrepl.js
-gitbook/jsrepl/langs/javascript/._jsrepl_js.js
 gitbook/jsrepl/langs/javascript/jsrepl_js.js
 gitbook/jsrepl/sandbox.html
 gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
-gitbook/plugins/gitbook-plugin-mathjax/._plugin.js
 gitbook/plugins/gitbook-plugin-mathjax/plugin.js
 
 NETWORK:
