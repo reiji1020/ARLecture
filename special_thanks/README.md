@@ -1,7 +1,10 @@
 # Special Thanks
 
 [GitBook](https://www.gitbook.io/)
-* このガイド作るために使用したソフトウェア
+* このガイドブックを作るために使用したソフトウェア
+
+[Keynote](https://www.apple.com/jp/mac/keynote/)
+* Mac用プレゼンテーションソフト
 
 [cacoo](https://cacoo.com)
 * イラストや図を作成できるオンラインアプリケーション

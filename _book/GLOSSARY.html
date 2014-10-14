@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>ARコンテンツを作ってみよう | Y-zemi Autumn AR Lecture</title>
+        <title>Glossary | Y-zemi Autumn AR Lecture</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,11 @@
     
     
     
-    <link rel="next" href="./resources.html" />
     
     
-    <link rel="prev" href="./unity_screen.html" />
+
+    
+    
     
 
         
@@ -33,7 +34,7 @@
 
 
         
-    <div class="book"  data-level="6" data-basepath="." data-revision="1413259976633">
+    <div class="book"  data-level="" data-basepath="." data-revision="1413259976633">
     
 
 <div class="book-summary">
@@ -291,7 +292,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="6" data-path="arcontents.html">
+        <li class="chapter " data-level="6" data-path="arcontents.html">
             
                 
                     <a href="./arcontents.html">
@@ -496,145 +497,13 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="page-inner">
                 
-                
-                    <section class="normal" id="section-gitbook_6">
-                    
-                        <h1 id="ar">ARコンテンツを作ってみよう</h1>
-<p>先ほどダウンロードしたARマーカー画像，モデル，モーション，モデルを使って，ARコンテンツを作っていきましょう．</p>
-<h2 id="">素材の導入</h2>
-<p>1.ARマーカーとVuforiaをUnityに導入する</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U0.png" alt="alt text"></p>
-<p><code>Asset&gt;Import Package&gt;Custum Package...</code>をクリックし，ファイルを追加してきます．
-追加するファイルは以下の2つです．</p>
-<ul>
-<li>(AutumnAR).unitypackage : ARマーカーファイル</li>
-<li>vuforia-unity-android-ios-3-x-x.unitypackage : SDKパッケージ</li>
-</ul>
-<p>2つのパッケージを追加すると，ファイル構成は以下のようになります．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U1.png" alt="alt text"></p>
-<p>2.初音ミクのモデル・音楽データ・モーションデータをUnityに導入する</p>
-<p>モデルや音楽のデータを入れておくファイルを作りましょう．</p>
-<p>Projectタブ内のAssetsフォルダの上で右クリックをして，Create-&gt;Folderをクリックし，<strong>Resources</strong>という名前のフォルダを作成して下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U2.png" alt="alt text"></p>
-<p>フォルダができたら，Resourcesフォルダの中にドラッグアンドドロップでモデルデータ，音楽データ・モーションデータを入れて下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U4.png" alt="alt text"></p>
-<p><strong>音楽データについての注意</strong></p>
-<p>デフォルトでは音楽データの3D Soundというオプションにチェックがついています．</p>
-<p>ここにチェックが入っていると<strong>きちんと音楽が鳴らないのでチェックを外して下さい．</strong></p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U5.png" alt="alt text"></p>
-<p>チェックを外したら，<code>Apply</code>ボタンを押してください．</p>
-<p>3.MMD4Mecanimを導入する</p>
-<p>先ほどダウンロードしたMMD4Mecanimのファイルに，</p>
-<p><code>MMD4Mecanim.unitypackage</code>というファイルがあります．</p>
-<p>これを1と同じ手順でUnityに読み込ませて下さい．</p>
-<p>以上で素材の導入は終了です．</p>
-<h2 id="">モデルとモーションを変換する</h2>
-<p>モデルとモーションを変換して，ミクに登場してもらいましょう．</p>
-<p>Resources→Lat式ミクVer2.31フォルダのにはモデルを構成する様々なデータが入っています．この中で，<strong>Unityのアイコンの『Lat式ミクVer2.31_Nomal.MMD4Mecanim.asset』</strong>というファイルを探して下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U6.png" alt="alt text"></p>
-<p>このとき，Inspectorタブに利用規約が表示されます．
-<strong>きちんと読んで利用規約に同意してから使用するようにしましょう．</strong></p>
-<p>利用規約に同意すると，このような画面に移行します．</p>
-<p>モデルデータは指定されているので，モーションデータを指定しましょう．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U7.png" alt="alt text"></p>
-<p><code>nekomimi_lat</code>というモーションデータを探し出し，指定して下さい．</p>
-<p>指定ができたら，下の<code>Process</code>ボタンをクリックして，モデルが変換できるまで待って下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U8.png" alt="alt text"></p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U9.png" alt="alt text"></p>
-<p>とうとうミクを登場させることが出来ました！</p>
-<p>カメラを動かしてもっと間近で見ましょう．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U10.png" alt="alt text"></p>
-<p>しかし少しモデルが暗く見づらいですね．</p>
-<p>GameObjectタブからDirectionalLightを選び，光源を設置しましょう．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U11.png" alt="alt text"></p>
-<p>ミクが明るく見えるようになりました！</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U12.png" alt="alt text"></p>
-<h3 id="">ただでさえ天使のミクさんをさらに天使にするコツ</h3>
-<p>今のままではモデルのエッジ(縁)が目立ちますね．</p>
-<p>このエッジを滑らかにして，モデルをよりキレイに見せる方法を紹介します．</p>
-<p>EditタブからProjectSetting→Quallityをクリックして下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U13.png" alt="alt text"></p>
-<p>Inspectorsタブに，チェックボックスが沢山並んでいる部分があります．
-Levelが6つあり，下に行くほど素材をキレイに表示することが出来ますが，PCや端末のリソース(バッテリー，メモリ，etc...)を消費します．</p>
-<p>生協指定PCは十分にリソースが確保されているはずですので，一番下のFantasticを指定しましょう．</p>
-<p>このとき，FantasticオプションのAnti Aliasingを『8x Multi Sampling』(最高レベル)に指定してください．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U14.png" alt="alt text"></p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U15.png" alt="alt text"></p>
-<p>どの端末をFantasticにするかはみなさんのもつ端末に任せます．</p>
-<p>iPhoneを使っている人はiOSアプリ，Android端末(Xperia,GALAXY,ARROWSなど)を使っている人はAndroidアプリのクオリティをFantasticにしてください．</p>
-<p>このままでは，ミクは動いてくれません．</p>
-<p>変換したモーションを，ミクに設定する必要があります．</p>
-<p>ミクの素材が入った<code>Lat式ミクVer2.31</code>のフォルダの中で右クリックをして，Create-&gt;Animator Controllerをクリックしてください．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U16.png" alt="alt text"></p>
-<p>Animator Controllerを作ったら，名前をつけてください．自由につけてかまいません．思いつかなければ「nekomimi」でよいでしょう．</p>
-<p>Animator Controllerを作成すると，Sceneタブの横にAnimatorタブが出来ます．これをクリックして，アニメーションを設定する画面を開いて下さい．</p>
-<p>次に，初音ミクのモデルデータの右側にある小さな矢印をクリックし，<strong>モーションの名前のついたファイル</strong>(Nullではない)を探します．今回の場合は，nekomimiという名前が付いています．</p>
-<p>これをAnimatorタブの中にドラッグ・アンド・ドロップしてください．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U17.png" alt="alt text"></p>
-<p>これでアニメーションファイルの設定は終了です．</p>
-<p>次にミクにこのファイルを設定しましょう．</p>
-<p>Hierarchyタブの中にあるミクのモデルをクリックし，Inspectorタブを見ると，Animatorというオプションを確認できます．</p>
-<p>ここの<strong>controller</strong>という場所に，先ほど作ったAnimator Controllerをドラッグ・アンド・ドロップしてください．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U18.png" alt="alt text"></p>
-<p>これでミクにモーションファイルを設定することが出来ました．</p>
-<p>最後に，音楽データを設定してミクに踊ってもらいましょう．</p>
-<p>Animatorオプションの下に，5つのボタンが並んでいます．</p>
-<p>ここの『Anim』というボタンをクリックして，Audio ClipにResourcesフォルダに置いておいた音楽ファイルをドラッグ・アンド・ドロップして下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U19.png" alt="alt text"></p>
-<p>これでミクに関する全ての設定が終わりました．
-上にある再生ボタンを押して，ミクが踊るかどうか確認して下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U20.png" alt="alt text"></p>
-<h2 id="ar">ARで表示出来るようにする</h2>
-<p>次に，この踊るミクをARで表示できるようにしていきましょう．</p>
-<p>あと一息です．頑張っていきましょう！</p>
-<p>Asset＞Qualcomm Reality＞Prefabsの中にある</p>
-<ul>
-<li>ARCamera</li>
-<li>ImageTarget</li>
-</ul>
-<p>というファイルを，Hierarchyフォルダに追加して下さい．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U21.png" alt="alt text"></p>
-<p>※初音ミクのモデルが白い板に埋まってしまっている人は，Hierarchyタブで初音ミクのモデルを選択し，緑の矢印をドラッグして板の上に乗るように調整して下さい．</p>
-<p><code>ImageTarget</code>は，どういった画像をマーカーとして使うか，その画像を認識した時どのようなコンテンツを表示するかをまとめて指定できるプログラムです．</p>
-<p><code>ARCamera</code>は，ImageTargetで指定した画像を見つけ出すためのプログラムです．</p>
-<h3 id="imagetarget">ImageTargetの設定</h3>
-<p>私達が作りたいものは，</p>
-<ul>
-<li>初音ミクの画像を読み込んだら</li>
-<li>初音ミクにダンスを踊ってもらう</li>
-</ul>
-<p>アプリです．初音ミクの画像と，初音ミクのモデルデータをImageTargetに設定しましょう．</p>
-<h4 id="">画像の設定</h4>
-<p>HierarchyタブでImageTargetを選択し，Inspectorタブの中のImageTarget Behaviors内，Datasetオプションを自分で作ったマーカーの名前に変更する．(例ではAutumnAR)</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U23.png" alt="alt text"></p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U24.png" alt="alt text"></p>
-<p>これで画像の設定は終了です．</p>
-<h4 id="">コンテンツの設定</h4>
-<p>Hierarchyタブの初音ミクのモデルデータを，ImageTargetにドラッグ・アンド・ドロップします．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U22.png" alt="alt text"></p>
-<p>このままでは，ミクが小さすぎて全くみえないので，大きさを調整します．</p>
-<p>モデルデータを選択した状態でInspectorタブの中で，Transformオプションの中のScaleをXYZ共に0.5に設定しましょう．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U25.png" alt="alt text"></p>
-<p>これでモデルの設定は終了です．</p>
-<p>ね？簡単でしょ？</p>
-<p>最後にHierarchyからMain Cameraを削除し，ARCameraの位置を調整して，終了です．</p>
-<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/U26.png" alt="alt text"></p>
-<p>※Unityをインストールして30日間は，UnityPro(有料版，13万程度)の機能を使用することが出来ます．</p>
-<p>この30日間の間であれば，PCのインカメラを使用してARの挙動を確認することが出来ますので，試してみてください．</p>
 
-                    
-                    </section>
-                
-                
+
                 </div>
             </div>
         </div>
 
         
-        <a href="./unity_screen.html" class="navigation navigation-prev " aria-label="Previous page: Unityの画面構成について"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="./resources.html" class="navigation navigation-next " aria-label="Next page: 素材の導入"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

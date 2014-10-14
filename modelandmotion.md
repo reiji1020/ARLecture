@@ -1,61 +1,4 @@
-# ARコンテンツを作ってみよう
-
-先ほどダウンロードしたARマーカー画像，モデル，モーション，モデルを使って，ARコンテンツを作っていきましょう．
-
-## 素材の導入
-
-1.ARマーカーとVuforiaをUnityに導入する
-
-![alt text][u0]
-[u0]:https://dl.dropboxusercontent.com/u/25806407/images/U0.png
-
-`Asset>Import Package>Custum Package...`をクリックし，ファイルを追加してきます．
-追加するファイルは以下の2つです．
-
-* (AutumnAR).unitypackage : ARマーカーファイル
-* vuforia-unity-android-ios-3-x-x.unitypackage : SDKパッケージ
-
-2つのパッケージを追加すると，ファイル構成は以下のようになります．
-
-![alt text][u1]
-[u1]:https://dl.dropboxusercontent.com/u/25806407/images/U1.png
-
-2.初音ミクのモデル・音楽データ・モーションデータをUnityに導入する
-
-モデルや音楽のデータを入れておくファイルを作りましょう．
-
-Projectタブ内のAssetsフォルダの上で右クリックをして，Create->Folderをクリックし，**Resources**という名前のフォルダを作成して下さい．
-
-![alt text][u2]
-[u2]:https://dl.dropboxusercontent.com/u/25806407/images/U2.png
-
-フォルダができたら，Resourcesフォルダの中にドラッグアンドドロップでモデルデータ，音楽データ・モーションデータを入れて下さい．
-
-![alt text][u3]
-[u3]:https://dl.dropboxusercontent.com/u/25806407/images/U4.png
-
-**音楽データについての注意**
-
-デフォルトでは音楽データの3D Soundというオプションにチェックがついています．
-
-ここにチェックが入っていると**きちんと音楽が鳴らないのでチェックを外して下さい．**
-
-![alt text][u4]
-[u4]:https://dl.dropboxusercontent.com/u/25806407/images/U5.png
-
-チェックを外したら，`Apply`ボタンを押してください．
-
-3.MMD4Mecanimを導入する
-
-先ほどダウンロードしたMMD4Mecanimのファイルに，
-
-`MMD4Mecanim.unitypackage`というファイルがあります．
-
-これを1と同じ手順でUnityに読み込ませて下さい．
-
-以上で素材の導入は終了です．
-
-## モデルとモーションを変換する
+# モデルとモーションを変換する
 
 モデルとモーションを変換して，ミクに登場してもらいましょう．
 
@@ -103,7 +46,7 @@ GameObjectタブからDirectionalLightを選び，光源を設置しましょう
 ![alt text][u11]
 [u11]:https://dl.dropboxusercontent.com/u/25806407/images/U12.png
 
-###ただでさえ天使のミクさんをさらに天使にするコツ
+## ただでさえ天使のミクさんをさらに天使にするコツ
 
 今のままではモデルのエッジ(縁)が目立ちますね．
 
@@ -180,74 +123,3 @@ Animatorオプションの下に，5つのボタンが並んでいます．
 
 ![alt text][u19]
 [u19]:https://dl.dropboxusercontent.com/u/25806407/images/U20.png
-
-## ARで表示出来るようにする
-
-次に，この踊るミクをARで表示できるようにしていきましょう．
-
-あと一息です．頑張っていきましょう！
-
-Asset＞Qualcomm Reality＞Prefabsの中にある
-
-* ARCamera
-* ImageTarget
-
-というファイルを，Hierarchyフォルダに追加して下さい．
-
-![alt text][u20]
-[u20]:https://dl.dropboxusercontent.com/u/25806407/images/U21.png
-
-※初音ミクのモデルが白い板に埋まってしまっている人は，Hierarchyタブで初音ミクのモデルを選択し，緑の矢印をドラッグして板の上に乗るように調整して下さい．
-
-`ImageTarget`は，どういった画像をマーカーとして使うか，その画像を認識した時どのようなコンテンツを表示するかをまとめて指定できるプログラムです．
-
-`ARCamera`は，ImageTargetで指定した画像を見つけ出すためのプログラムです．
-
-### ImageTargetの設定
-
-私達が作りたいものは，
-
-* 初音ミクの画像を読み込んだら
-* 初音ミクにダンスを踊ってもらう
-
-アプリです．初音ミクの画像と，初音ミクのモデルデータをImageTargetに設定しましょう．
-
-#### 画像の設定
-
-HierarchyタブでImageTargetを選択し，Inspectorタブの中のImageTarget Behaviors内，Datasetオプションを自分で作ったマーカーの名前に変更する．(例ではAutumnAR)
-
-![alt text][u21]
-[u21]:https://dl.dropboxusercontent.com/u/25806407/images/U23.png
-
-![alt text][u22]
-[u22]:https://dl.dropboxusercontent.com/u/25806407/images/U24.png
-
-これで画像の設定は終了です．
-
-#### コンテンツの設定
-
-Hierarchyタブの初音ミクのモデルデータを，ImageTargetにドラッグ・アンド・ドロップします．
-
-![alt text][u23]
-[u23]:https://dl.dropboxusercontent.com/u/25806407/images/U22.png
-
-このままでは，ミクが小さすぎて全くみえないので，大きさを調整します．
-
-モデルデータを選択した状態でInspectorタブの中で，Transformオプションの中のScaleをXYZ共に0.5に設定しましょう．
-
-![alt text][u24]
-[u24]:https://dl.dropboxusercontent.com/u/25806407/images/U25.png
-
-これでモデルの設定は終了です．
-
-ね？簡単でしょ？
-
-最後にHierarchyからMain Cameraを削除し，ARCameraの位置を調整して，終了です．
-
-
-![alt text][u25]
-[u25]:https://dl.dropboxusercontent.com/u/25806407/images/U26.png
-
-※Unityをインストールして30日間は，UnityPro(有料版，13万程度)の機能を使用することが出来ます．
-
-この30日間の間であれば，PCのインカメラを使用してARの挙動を確認することが出来ますので，試してみてください．
