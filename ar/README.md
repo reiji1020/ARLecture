@@ -76,7 +76,7 @@ ARマーカーは一般的に紙に印刷され，適切な光量のある屋内
 ####ロケーションベース型AR
 * [セカイカメラ](http://ja.wikipedia.org/wiki/%E3%82%BB%E3%82%AB%E3%82%A4%E3%82%AB%E3%83%A1%E3%83%A9)(頓智ドット，2014年1月サービス終了)
 
-->[tab](corp.tab.do)と呼ばれる新サービスに移行？
+->[tab](http://corp.tab.do/)と呼ばれる新サービスに移行？
 
 * [Skyware](https://www.tis.jp/service_solution/skyware/)(TIS Direct Web)
 
