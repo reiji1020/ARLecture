@@ -7,8 +7,8 @@ ARマーカーを作ってみましょう．
 
 この画像です．5分で作りました．
 
-![alt text][armarcker]
-[armarcker]:https://dl.dropboxusercontent.com/u/25806407/images/ARMarcker.png
+![alt text][armarker]
+[armarker]:https://dl.dropboxusercontent.com/u/25806407/images/ARMarcker.png
 
 画像をARマーカーとして使用するには，この画像に含まれる**特徴点と**呼ばれるデータを計算しなければなりません．
 
