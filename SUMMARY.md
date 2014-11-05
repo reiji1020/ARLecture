@@ -2,6 +2,10 @@
 
 * [Introduction](README.md)
 * [ARとは何か？](ar/README.md)
+   * [ビジョンベース型AR](ar/ar.md)
+   * [ロケーションベース型AR](rocationbasear.md)
+   * [ARを用いた事例](jirei.md)
+   * [両手法のメリットとデメリット](ar/meritordemerit.md)
 * [作るものをイメージしよう](image.md)
 * [素材を集めよう](resource/README.md)
    * [初音ミクの3Dモデル](resource/miku.md)
