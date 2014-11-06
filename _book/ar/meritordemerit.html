@@ -41,7 +41,7 @@
 
 
         
-    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1415199667907">
+    <div class="book"  data-level="1.4" data-basepath=".." data-revision="1415276666016">
     
 
 <div class="book-summary">
@@ -575,7 +575,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_3852">
+                    <section class="normal" id="section-gitbook_8">
                     
                         <h1 id="">両手法のメリットとデメリット</h1>
 <p>ARの主な手法を説明しましたが，この2つの手法にはメリットとデメリットが存在します．</p>
@@ -636,9 +636,67 @@
 <h3 id="ar">ロケーションベース型ARのメリット</h3>
 <p>ロケーションベース型ARのメリットとしては</p>
 <ul>
-<li>屋外での使用</li>
+<li>屋外での利用が容易である</li>
+<li>ARマーカーを事前に用意する必要がない</li>
+<li>ジャイロセンサ，GPS，気圧センサなどの値を用いて様々なコンテンツを提供できる</li>
 </ul>
+<p>が挙げられます．</p>
+<h5 id="1">1.屋外での利用が容易である</h5>
+<p>ロケーションベース型ARでは，ARコンテンツを表示したい対象物，或いはセンサの値がビジョンベース型ARでいうARマーカーの役割を果たします．
+基本的に<code>屋内でARを利用する時はビジョンベース型AR</code>，<code>屋外でARを利用する時はロケーションベース型AR</code>を使用するとよいでしょう．</p>
+<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/LocationBase1.png" alt="alt text"></p>
+<h5 id="2ar">2.ARマーカーを事前に用意する必要がない</h5>
+<p>ロケーションベース型ARでは，ARマーカーを事前に用意する必要がありません．</p>
+<p>またARマーカーを配置する必要が無いので，周囲の景観を損なうこともないため，現実空間と仮想空間の間をシームレスにつなぎ合わせることが可能です．</p>
+<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/LocationBase2.png" alt="alt text"></p>
+<h5 id="3gps">3.ジャイロセンサ，GPS，輝度センサなどの値を用いて様々なコンテンツを提供できる</h5>
+<p>ロケーションベース型ARの一番のメリットは，携帯端末に搭載されているセンサの様々な値を元にしてARコンテンツを提供できることです．
+以下にスマートフォンで利用されている主なセンサを紹介します．</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">センサ名</th>
+<th style="text-align:center">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ジャイロセンサ(加速度センサ)</td>
+<td style="text-align:center">端末の回転や重力，傾きなどを取得する</td>
+</tr>
+<tr>
+<td style="text-align:center">GPS(Grovbal Positioning System)</td>
+<td style="text-align:center">人工衛星を利用して，端末が地球上のどの位置にいるかを計測する</td>
+</tr>
+<tr>
+<td style="text-align:center">輝度センサ</td>
+<td style="text-align:center">端末がある環境の明るさを取得する</td>
+</tr>
+<tr>
+<td style="text-align:center">圧力センサ</td>
+<td style="text-align:center">端末がある環境の気圧を取得する</td>
+</tr>
+<tr>
+<td style="text-align:center">加速度センサ</td>
+<td style="text-align:center">加速度を取得する．具体的にはシェイクなどの動作を察知する</td>
+</tr>
+<tr>
+<td style="text-align:center">地磁気センサ</td>
+<td style="text-align:center">磁場を検知する．コンパスなどで利用される</td>
+</tr>
+</tbody>
+</table>
+<p>これらのセンサで取得できる値を元に，リアルタイムで変動するコンテンツを提供出来るのもロケーションベース型ARの醍醐味と言えます．</p>
+<p><img src="https://dl.dropboxusercontent.com/u/25806407/images/LocationBase3.png" alt="alt text"></p>
 <h3 id="ar">ロケーションベース型ARのデメリット</h3>
+<p>ロケーションベース型ARのデメリットは，ビジョンベース型ARのメリットでも話した通り，</p>
+<ul>
+<li>計算量がとてつもなく多い</li>
+<li>↑の計算をする上で専門知識が問われることもある</li>
+</ul>
+<p>が挙げられます．</p>
+<p>ロケーションベース型ARの難点は計算量とその複雑さにあります．</p>
+<p>このデメリットを解消できれば，より洗練された面白いARコンテンツを作成することができるようになるでしょう．</p>
 
                     
                     </section>
