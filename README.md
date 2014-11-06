@@ -41,9 +41,9 @@ Introduction
 
 ARを使ったプログラムやスマートフォンアプリの開発をしたり，
 
-学外でUnityを使って作った作品を発表したり，
+学外でUnityを使って作った作品を発表したり
 
-IT系の[ブログ](http://reiji1020.hatenablog.com/)を書いたりしてます.
+IT系の[ブログ](http://reiji1020.hatenablog.com/)を書いたりしてます
 
 
 ######連絡先
