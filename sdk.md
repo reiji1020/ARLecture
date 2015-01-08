@@ -1,6 +1,6 @@
 # SDKの入手
 
-Vuforiaで作ったマーカーを使用するためのSDK(Software Developer Tool)を入手します．
+Vuforiaで作ったマーカーを使用するためのSDK(Software Developer Kit)を入手します．
 
 ![alt text][sdk0]
 [sdk0]:https://dl.dropboxusercontent.com/u/25806407/images/sdk1.png
