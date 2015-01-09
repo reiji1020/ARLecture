@@ -1,3 +1,7 @@
 {
-    "plugins": [ "exercises", "quizzes" ]
+    "plugins": [
+        "exercises",
+        "quizzes"
+    ],
+    "pluginsConfig": {}
 }
